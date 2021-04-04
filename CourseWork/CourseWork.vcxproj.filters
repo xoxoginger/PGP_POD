@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="src\core\scene.hpp" />
+    <ClInclude Include="src\core\scene_object.hpp" />
+    <ClInclude Include="src\core\primitives\vec3.hpp" />
+    <ClInclude Include="src\core\primitives\triangle.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="src\scene\kernel.cpp" />
+    <CudaCompile Include="src\core\primitives\vec3.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\core\primitives\triangle.cpp" />
+    <ClCompile Include="src\utils\mesh_translator.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="tests\integration\1.in" />
+    <None Include="tests\integration\2.in" />
+  </ItemGroup>
+</Project>
