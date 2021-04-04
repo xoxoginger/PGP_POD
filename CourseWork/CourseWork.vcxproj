@@ -20,6 +20,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{EE111DE3-CFC6-4605-9921-39525C8C8B9A}</ProjectGuid>
     <RootNamespace>CourseWork</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
@@ -57,9 +58,15 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IntDir>build\</IntDir>
+    <OutDir>build\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Publish|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IntDir>build\</IntDir>
+    <OutDir>build\</OutDir>
+    <SourcePath>
+    </SourcePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -76,10 +83,12 @@
       <TargetMachinePlatform>64</TargetMachinePlatform>
     </CudaCompile>
     <PostBuildEvent>
-      <Command>del publish/*.asc</Command>
+      <Command>
+      </Command>
     </PostBuildEvent>
     <PostBuildEvent>
-      <Message>упаковка исходного кода в архив</Message>
+      <Message>
+      </Message>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Publish|x64'">

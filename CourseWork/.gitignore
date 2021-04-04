@@ -1,4 +1,4 @@
 .vs
-x64
+build
 publish/*.tar
 publish/*.asc
