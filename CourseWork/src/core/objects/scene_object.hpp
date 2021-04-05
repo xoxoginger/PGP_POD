@@ -1,18 +1,20 @@
 #ifndef SCENE_OBJECT_H
 #define SCENE_OBJECT_H
 
-#include <functional>
+#include <vector>
 #include "../primitives/triangle.hpp"
 #include "../scene.hpp"
 
 class scene_object
 {
-	std::function<void(int)> m_update;
-	scene m_parent;
 public:
-	scene get_parent();
 	vec3 pos;
-	scene_object(vec3 pos, std::function<void(int)> update);
+	void* parent;
+
+	//вызывается на GPU или CPU в зависимости от выбранного режима
+	__host__ __device__
+	virtual void update(int t);
+	scene_object(vec3 pos);
 };
 
 #endif

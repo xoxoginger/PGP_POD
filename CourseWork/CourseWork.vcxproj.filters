@@ -2,9 +2,17 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClInclude Include="src\core\scene.hpp" />
-    <ClInclude Include="src\core\scene_object.hpp" />
     <ClInclude Include="src\core\primitives\vec3.hpp" />
     <ClInclude Include="src\core\primitives\triangle.hpp" />
+    <ClInclude Include="src\core\objects\camera.hpp" />
+    <ClInclude Include="src\core\render\renderer.hpp" />
+    <ClInclude Include="src\core\render\render_params.hpp" />
+    <ClInclude Include="src\core\objects\scene_object.hpp" />
+    <ClInclude Include="utils\gif.h" />
+    <ClInclude Include="src\core\primitives\material.hpp" />
+    <ClInclude Include="src\core\objects\mesh_object.hpp" />
+    <ClInclude Include="src\core\objects\light.hpp" />
+    <ClInclude Include="src\scene\my_camera.hpp" />
   </ItemGroup>
   <ItemGroup>
     <CudaCompile Include="src\scene\kernel.cpp" />
@@ -12,7 +20,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\core\primitives\triangle.cpp" />
-    <ClCompile Include="src\utils\mesh_translator.cpp" />
+    <ClCompile Include="src\core\primitives\material.cpp" />
+    <ClCompile Include="src\core\scene.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="tests\integration\1.in" />

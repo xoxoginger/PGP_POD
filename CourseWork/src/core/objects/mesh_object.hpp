@@ -5,7 +5,7 @@
 #include "../primitives/triangle.hpp"
 #include "scene_object.hpp"
 
-class mesh_object : scene_object
+class mesh_object : public scene_object
 {
 public:
 	std::vector<triangle> mesh;

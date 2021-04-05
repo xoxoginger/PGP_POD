@@ -9,6 +9,7 @@ struct triangle
 	vec3 a;
 	vec3 b;
 	vec3 c;
+	int mat_id;
 	__host__ __device__
 	vec3 test(vec3 pos, vec3 dir);
 };

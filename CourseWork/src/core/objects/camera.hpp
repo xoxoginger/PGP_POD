@@ -4,7 +4,7 @@
 #include "../render/renderer.hpp"
 #include "scene_object.hpp"
 
-class camera : scene_object
+class camera : public scene_object
 {
 	renderer m_renderer;
 public:
