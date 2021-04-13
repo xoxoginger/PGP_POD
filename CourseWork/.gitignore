@@ -1,0 +1,5 @@
+.vs
+build
+publish/*.tar
+publish/*.asc
+x64
