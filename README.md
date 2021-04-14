@@ -16,6 +16,8 @@ Satanic CUDA
 ### Вариант 4. LU-разложение матрицы.
 
 #### Для лабораторных работ 2-3 использовался конвертер, сделанный [этим замечательным человечком](https://github.com/alexlopatin) 
+Use: ./ImageConverter.exe in.png in.data ; ./ImageConverter.exe out.data out.png
+
 
 ## Параллельная обработка данных
 
